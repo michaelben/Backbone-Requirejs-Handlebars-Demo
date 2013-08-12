@@ -1,0 +1,8 @@
+<h3>Health Condition<h3>
+<div><em>Name: </em><%= model.data.name %></div>
+<dl>
+    <% for(var tr in model.data.treatments) { %>
+                <dt><%= model.data.treatments[tr].display_name %></dt>
+                <dd><%= model.data.treatments[tr].description %></dd>
+    <% } %>
+</dl>
